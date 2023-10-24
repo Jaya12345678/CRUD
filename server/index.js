@@ -4,6 +4,8 @@ const cors=require("cors")
 const UserModel=require('./models/Users')
 const EmployeeModel=require('./models/Employee')
 
+const dotenv = require("dotenv");
+dotenv.config();
 const app=express();
 app.use(cors())
 app.use(express.json())
