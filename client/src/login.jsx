@@ -8,7 +8,7 @@ function login() {
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:3001/login',{name,password})
+        axios.post('https://management-system-8hpa.onrender.com/login',{name,password})
         .then(res=>{
                 console.log(res)
                 if(res.data==="Success")

@@ -35,7 +35,7 @@ function CreateUser() {
     e.preventDefault();
     if(validForm())
     {
-        axios.post("http://localhost:3001/createUser",{name,email,phone,age})
+        axios.post("https://management-system-8hpa.onrender.com/createUser",{name,email,phone,age})
       .then(result=>{
         console.log(result)
         navigate('/users')

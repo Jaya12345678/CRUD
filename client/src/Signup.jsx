@@ -13,7 +13,7 @@ function Signup() {
         e.preventDefault()
         if(password==confirmPassword)
         {
-            axios.post('http://localhost:3001',{name,email,password})
+            axios.post('https://management-system-8hpa.onrender.com',{name,email,password})
             .then(res=>{
                 console.log(res)
                 navigate('/login')

@@ -24,7 +24,7 @@ function UpdateUser() {
 
   const Update=(e)=>{
     e.preventDefault()
-    axios.put("http://localhost:3001/updateUser/"+id,{name,email,phone,age})
+    axios.put("https://management-system-8hpa.onrender.com/updateUser/"+id,{name,email,phone,age})
     .then(result=>{
       console.log(result)
       navigate('/users')

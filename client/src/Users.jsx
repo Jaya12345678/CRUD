@@ -4,13 +4,13 @@ import axios from "axios"
 function Users() {
     const [Users, setUsers] = useState([])
     useEffect(() => {
-      axios.get("http://localhost:3001/users")
+      axios.get("https://management-system-8hpa.onrender.com/users")
       .then(result=>setUsers(result.data))
       .catch(err=>console.log(err))
     }, [])
     
     const handleDelete=(id)=>{
-        axios.delete("http://localhost:3001/deleteUser/"+id)
+        axios.delete("https://management-system-8hpa.onrender.com/deleteUser/"+id)
         .then(res=>{
             console.log(res)
             window.location.reload()
