@@ -1,7 +1,7 @@
-import { useState } from "react"
+import  { useState } from "react"
 import {useNavigate} from 'react-router-dom'
 import axios from "axios"
-function login() {
+function Login() {
     const [name, setname] = useState()
     const [password, setpassword] = useState()
     const navigate=useNavigate()
@@ -41,5 +41,5 @@ function login() {
     );
   }
   
-  export default login;
+  export default Login;
   
